@@ -101,6 +101,8 @@ url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fD
 .container {
   width:70%;
   margin:100px auto;
+  text-align: center;
+  background-color: black;
 }
 
 .container h1, container h3 {
@@ -122,4 +124,41 @@ body {
   color:purple;
 }
 
+  
+/* ______GALLERY_____   */
 
+  
+  .gallery-container {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.gallery-container .image{
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 5px 
+    rgba(0,0,0,.25);
+  overflow: hidden;
+}
+
+.gallery-container .image
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all .3s;
+}
+.gallery-container .image
+img:hover {
+  transform: scale(1.3);
+}
+
+ 
